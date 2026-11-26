@@ -1,0 +1,143 @@
+cat	en	tr	keys	src
+Araçlar	Selection tool	Seçim aracı	V	helpx
+Araçlar	Direct Selection tool	Doğrudan seçim aracı	A	helpx
+Araçlar	Magic Wand tool	Sihirli değnek	Y	helpx
+Araçlar	Lasso tool	Kement aracı	Q	helpx
+Araçlar	Pen tool	Kalem aracı	P	helpx
+Araçlar	Curvature tool	Eğrilik aracı	Shift + `	helpx
+Araçlar	Add Anchor Point tool	Bağlantı noktası ekle	+	helpx
+Araçlar	Delete Anchor Point tool	Bağlantı noktası sil	-	helpx
+Araçlar	Anchor Point tool	Bağlantı noktası aracı	Shift + C	helpx
+Araçlar	Type tool	Yazı aracı	T	helpx
+Araçlar	Touch Type tool	Dokunmatik yazı aracı	Shift + T	helpx
+Araçlar	Line Segment tool	Çizgi aracı	\	helpx
+Araçlar	Rectangle tool	Dikdörtgen aracı	M	helpx
+Araçlar	Ellipse tool	Elips aracı	L	helpx
+Araçlar	Paintbrush tool	Boya fırçası	B	helpx
+Araçlar	Blob Brush tool	Damla fırça	Shift + B	helpx
+Araçlar	Pencil tool	Kurşun kalem	N	helpx
+Araçlar	Shaper tool	Şekillendirici	Shift + N	helpx
+Araçlar	Rotate tool	Döndürme aracı	R	helpx
+Araçlar	Reflect tool	Yansıtma aracı	O	helpx
+Araçlar	Scale tool	Ölçekleme aracı	S	helpx
+Araçlar	Warp tool	Bükme aracı	Shift + R	helpx
+Araçlar	Width tool	Genişlik aracı	Shift + W	helpx
+Araçlar	Free Transform tool	Serbest dönüştürme	E	helpx
+Araçlar	Shape Builder tool	Şekil oluşturucu	Shift + M	helpx
+Araçlar	Artboard tool	Çalışma yüzeyi aracı	Shift + O	helpx
+Araçlar	Perspective Grid tool	Perspektif ızgara	Shift + P	helpx
+Araçlar	Symbol Sprayer tool	Sembol püskürtücü	Shift + S	helpx
+Araçlar	Column Graph tool	Sütun grafik	J	helpx
+Araçlar	Mesh tool	Ağ aracı	U	helpx
+Araçlar	Gradient tool	Degrade aracı	G	helpx
+Araçlar	Eyedropper tool	Damlalık	I	helpx
+Araçlar	Blend tool	Karışım aracı	W	helpx
+Araçlar	Live Paint Bucket tool	Canlı boya kovası	K	helpx
+Araçlar	Slice tool	Dilim aracı	Shift + K	helpx
+Araçlar	Eraser tool	Silgi	Shift + E	helpx
+Araçlar	Scissors tool	Makas	C	helpx
+Araçlar	Hand tool	El aracı (kaydırma)	H	helpx
+Araçlar	Zoom tool	Yakınlaştırma aracı	Z	helpx
+Araçlar	Temporarily switch to Hand tool	Geçici el aracı	Spacebar	helpx
+Sık kullanılan	Undo	Geri al	Ctrl + Z	helpx
+Sık kullanılan	Redo	Yinele	Shift + Ctrl + Z	helpx
+Sık kullanılan	Cut	Kes	Ctrl + X	helpx
+Sık kullanılan	Copy	Kopyala	Ctrl + C	helpx
+Sık kullanılan	Paste	Yapıştır	Ctrl + V	helpx
+Sık kullanılan	Paste in Front	Öne yapıştır	Ctrl + F	helpx
+Sık kullanılan	Paste at Back	Arkaya yapıştır	Ctrl + B	helpx
+Sık kullanılan	Paste in Place	Yerinde yapıştır	Shift + Ctrl + V	helpx
+Sık kullanılan	Paste on All Artboards	Tüm çalışma yüzeylerine yapıştır	Alt + Shift + Ctrl + V	helpx
+Sık kullanılan	Check Spelling	Yazım denetimi	Ctrl + I	helpx
+Sık kullanılan	Open the Preferences dialog box	Tercihler	Ctrl + K	helpx
+Sık kullanılan	Open the Keyboard Shortcuts dialog box	Klavye kısayolları penceresi	Alt + Shift + Ctrl + K	helpx
+Sık kullanılan	Open the Color Settings dialog box	Renk ayarları	Shift + Ctrl + K	helpx
+Dosya	Create a document	Yeni belge	Ctrl + N	helpx
+Dosya	Create a document from a template	Şablondan yeni belge	Shift + Ctrl + N	helpx
+Dosya	Open a document	Belge aç	Ctrl + O	helpx
+Dosya	Place a file	Dosya yerleştir (resim ekle)	Shift + Ctrl + P	helpx
+Dosya	Save the document	Kaydet	Ctrl + S	helpx
+Dosya	Open the Save As dialog box	Farklı kaydet	Shift + Ctrl + S	helpx
+Dosya	Save a copy of the document	Kopyasını kaydet	Alt + Ctrl + S	helpx
+Dosya	Open the Export for Screens dialog box	Ekranlar için dışa aktar	Alt + Ctrl + E	helpx
+Dosya	Open the Save for Web (Legacy) dialog box	Web için kaydet (eski)	Alt + Shift + Ctrl + S	helpx
+Dosya	Package the document	Belgeyi paketle	Alt + Shift + Ctrl + P	helpx
+Dosya	Open the Document Setup dialog box	Belge ayarları	Alt + Ctrl + P	helpx
+Dosya	Open the File Information dialog box	Dosya bilgisi	Alt + Shift + Ctrl + I	helpx
+Dosya	Print	Yazdır	Ctrl + P	helpx
+Dosya	Close the document	Belgeyi kapat	Ctrl + W	helpx
+Dosya	Quit Illustrator	Illustrator'dan çık	Ctrl + Q	helpx
+Seçim & nesne	Select all artwork	Tümünü seç	Ctrl + A	helpx
+Seçim & nesne	Deselect all artwork	Seçimi kaldır	Shift + Ctrl + A	helpx
+Seçim & nesne	Reselect all artwork	Yeniden seç	Ctrl + 6	helpx
+Seçim & nesne	Select artwork on the active artboard	Etkin çalışma yüzeyindeki her şeyi seç	Ctrl + Alt + A	helpx
+Seçim & nesne	Group the selected artwork	Grupla	Ctrl + G	helpx
+Seçim & nesne	Ungroup the selected artwork	Grubu çöz	Shift + Ctrl + G	helpx
+Seçim & nesne	Lock the selected artwork	Seçileni kilitle	Ctrl + 2	helpx
+Seçim & nesne	Unlock all locked artwork	Tüm kilitleri aç	Alt + Ctrl + 2	helpx
+Seçim & nesne	Hide the selected artwork	Seçileni gizle	Ctrl + 3	helpx
+Seçim & nesne	Show all hidden artworks	Gizlenenlerin hepsini göster	Alt + Ctrl + 3	helpx
+Seçim & nesne	Bring the selection to the front	En öne getir	Shift + Ctrl + ]	helpx
+Seçim & nesne	Bring the selection forward	Bir öne getir	Ctrl + ]	helpx
+Seçim & nesne	Bring the selection backward	Bir arkaya gönder	Ctrl + [	helpx
+Seçim & nesne	Send the selection to the back	En arkaya gönder	Shift + Ctrl + [	helpx
+Seçim & nesne	Select the object above the current selection	Üstteki nesneyi seç	Alt + Ctrl + ]	helpx
+Seçim & nesne	Select the object below the current selection	Alttaki nesneyi seç	Alt + Ctrl + [	helpx
+Seçim & nesne	Switch to last-used selection tool	Son kullanılan seçim aracına geç	Ctrl + `	helpx
+Seçim & nesne	Move the selection by the keyboard increment value	Seçimi kaydır (küçük adım)	Arrow keys	helpx
+Seçim & nesne	Move the selection by 10x the keyboard increment value	Seçimi kaydır (10 kat adım)	Shift + Arrow keys	helpx
+Seçim & nesne	Reapply a transformation to an object	Son dönüştürmeyi tekrarla	Ctrl + D	helpx
+Seçim & nesne	Duplicate while moving (Selection tool)	Sürüklerken kopyala	Alt-drag	helpx
+Seçim & nesne	Create crop marks around the selected object	Seçimin çevresine kırpma işareti	Alt + C + O	helpx
+Görünüm	Zoom in	Yakınlaştır	Ctrl + +	helpx
+Görünüm	Zoom out	Uzaklaştır	Ctrl + -	helpx
+Görünüm	View artwork at 100%	%100 görüntüle	Ctrl + 1	helpx
+Görünüm	Fit all artboards in the window	Tüm çalışma yüzeylerini sığdır	Ctrl + Alt + 0	helpx
+Görünüm	Zoom in temporarily	Geçici yakınlaştır	Ctrl + Spacebar	helpx
+Görünüm	Zoom out temporarily	Geçici uzaklaştır	Ctrl + Alt + Spacebar	helpx
+Görünüm	Switch screen modes	Ekran modunu değiştir	F	helpx
+Görünüm	Toggle between Outline and GPU Preview	Anahat görünümü aç / kapat	Ctrl + Y	helpx
+Görünüm	View Pixel Preview	Piksel önizleme	Alt + Ctrl + Y	helpx
+Görünüm	View Overprint Preview	Üst baskı önizleme	Alt + Shift + Ctrl + Y	helpx
+Görünüm	Show or hide artboard rulers	Cetvelleri göster / gizle	Ctrl + R	helpx
+Görünüm	Show or hide guides	Kılavuzları göster / gizle	Ctrl + ;	helpx
+Görünüm	Lock guides	Kılavuzları kilitle	Alt + Ctrl + ;	helpx
+Görünüm	Create guides	Seçimden kılavuz oluştur	Ctrl + 5	helpx
+Görünüm	Release guides	Kılavuzları serbest bırak	Alt + Ctrl + 5	helpx
+Görünüm	Show or hide Smart Guides	Akıllı kılavuzlar	Ctrl + U	helpx
+Görünüm	Show grid	Izgarayı göster	Ctrl + '	helpx
+Görünüm	Snap to grid	Izgaraya yapış	Shift + Ctrl + '	helpx
+Görünüm	Snap to point	Noktaya yapış	Alt + Ctrl + '	helpx
+Görünüm	Show or hide the bounding box	Sınırlayıcı kutuyu göster / gizle	Shift + Ctrl + B	helpx
+Görünüm	Show transparency grid	Saydamlık ızgarası	Shift + Ctrl + D	helpx
+Görünüm	Show or hide artboards	Çalışma yüzeylerini göster / gizle	Ctrl + Shift + H	helpx
+Görünüm	Go to the next document	Sonraki belge	Ctrl + F6	helpx
+Görünüm	Go to the previous document	Önceki belge	Ctrl + Shift + F6	helpx
+Çizim & yol	Join two or more paths	Yolları birleştir	Ctrl + J	helpx
+Çizim & yol	Average two or more paths	Yolların ortalamasını al	Alt + Ctrl + J	helpx
+Çizim & yol	Create a compound path	Bileşik yol oluştur	Ctrl + 8	helpx
+Çizim & yol	Release a compound path	Bileşik yolu çöz	Alt + Shift + Ctrl + 8	helpx
+Çizim & yol	Switch between drawing modes	Çizim modları arasında geçiş	Shift + D	helpx
+Çizim & yol	Constrain the shape while drawing or rotating	Orantılı çiz / döndür	Shift-drag	helpx
+Çizim & yol	Draw from the center of a shape	Merkezden çiz	Alt-drag	helpx
+Çizim & yol	Increase / decrease the Blob Brush size	Damla fırça boyutu büyüt / küçült	] / [	helpx
+Çizim & yol	Blend objects	Nesneleri karıştır (blend)	Alt + Ctrl + B	helpx
+Çizim & yol	Distort with a warp-shaped envelope	Zarf ile bük	Alt + Ctrl + Shift + W	helpx
+Çizim & yol	Distort with a mesh-shaped envelope	Ağ zarfı ile bük	Alt + Ctrl + M	helpx
+Çizim & yol	Distort using another object as the envelope	Üstteki nesneyle bük	Alt + Ctrl + C	helpx
+Çizim & yol	Edit a pattern	Deseni düzenle	Shift + Ctrl + F8	helpx
+Renk	Toggle between fill and stroke	Dolgu / kontur arasında geç	X	helpx
+Renk	Set the default fill and stroke	Varsayılan dolgu ve kontur	D	helpx
+Renk	Swap the fill and stroke	Dolgu ile konturu değiştir	Shift + X	helpx
+Renk	Select color fill mode	Düz renk dolgu	,	helpx
+Renk	Select Gradient fill mode	Degrade dolgu	<	helpx
+Renk	Select no stroke/fill mode	Dolgu / kontur yok	/	helpx
+Renk	Add a new fill	Yeni dolgu ekle	Ctrl + /	helpx
+Renk	Add a new stroke	Yeni kontur ekle	Ctrl + Alt + /	helpx
+Renk	Create a Live Paint group	Canlı boya grubu oluştur	Alt + Ctrl + X	helpx
+Yazı	Align paragraph left, right, or center	Paragrafı sola / sağa / ortaya hizala	Ctrl + Shift + L, R, or C	helpx
+Yazı	Justify text left	Yasla (son satır sola)	Ctrl + Shift + J	helpx
+Yazı	Justify all lines	Tüm satırları yasla	Shift + Ctrl + F	helpx
+Yazı	Move one word to the right or left	Kelime kelime ilerle	Ctrl + Right Arrow or Left Arrow	helpx
+Yazı	Select one word to the right or left	Kelime kelime seç	Shift + Ctrl + Right Arrow or Left Arrow	helpx
+Yazı	Toggle line composer	Satır dizgisini değiştir	Alt + Shift + Ctrl + C	helpx

@@ -1,0 +1,127 @@
+cat	en	tr	keys	src
+Araçlar	Move Tool	Taşıma aracı	V	tool
+Araçlar	Rectangular / Elliptical Marquee Tool	Dikdörtgen / elips seçim aracı	M	tool
+Araçlar	Lasso Tool	Kement aracı	L	tool
+Araçlar	Object / Quick Selection, Magic Wand	Nesne / hızlı seçim, sihirli değnek	W	tool
+Araçlar	Crop Tool	Kırpma aracı	C	tool
+Araçlar	Eyedropper Tool	Damlalık aracı	I	tool
+Araçlar	Spot Healing / Healing Brush, Patch	Nokta düzeltme / düzeltme fırçası, yama	J	tool
+Araçlar	Brush Tool	Fırça aracı	B	tool
+Araçlar	Clone Stamp Tool	Klonlama damgası	S	tool
+Araçlar	History Brush Tool	Geçmiş fırçası	Y	tool
+Araçlar	Eraser Tool	Silgi aracı	E	tool
+Araçlar	Gradient / Paint Bucket Tool	Degrade / boya kovası	G	tool
+Araçlar	Dodge / Burn / Sponge Tool	Açma / yakma / sünger	O	tool
+Araçlar	Pen Tool	Kalem aracı	P	tool
+Araçlar	Horizontal Type Tool	Yazı aracı	T	tool
+Araçlar	Path / Direct Selection Tool	Yol seçimi / doğrudan seçim	A	tool
+Araçlar	Rectangle / Ellipse / Shape Tools	Dikdörtgen / elips / şekil araçları	U	tool
+Araçlar	Hand Tool	El aracı (kaydırma)	H	tool
+Araçlar	Rotate View Tool	Görünümü döndürme	R	tool
+Araçlar	Zoom Tool	Yakınlaştırma aracı	Z	tool
+Araçlar	Cycle through tools in the same group	Aynı gruptaki araçlar arasında geçiş	Shift+tool key	tool
+Araçlar	Temporarily use Hand Tool	Geçici el aracı	Space (hold)	tool
+Renk & fırça	Default foreground/background colors	Varsayılan ön/arka plan renkleri (siyah/beyaz)	D	tool
+Renk & fırça	Switch foreground/background colors	Ön ve arka plan rengini değiştir	X	tool
+Renk & fırça	Quick Mask mode	Hızlı maske modu	Q	tool
+Renk & fırça	Change screen mode	Ekran modunu değiştir	F	tool
+Renk & fırça	Decrease / increase brush size	Fırça boyutunu küçült / büyüt	[ / ]	tool
+Renk & fırça	Brush settings panel	Fırça ayarları paneli	F5	kys
+Renk & fırça	Color panel	Renk paneli	F6	kys
+Dosya	New...	Yeni belge	Ctrl+N	kys
+Dosya	Open...	Aç	Ctrl+O	kys
+Dosya	Open As...	Farklı aç	Alt+Shift+Ctrl+O	kys
+Dosya	Save	Kaydet	Ctrl+S	kys
+Dosya	Save As...	Farklı kaydet	Shift+Ctrl+S	kys
+Dosya	Save a Copy...	Kopyasını kaydet	Alt+Ctrl+S	kys
+Dosya	Export As...	Farklı dışa aktar	Alt+Shift+Ctrl+W	kys
+Dosya	Quick Export PNG	Hızlı PNG dışa aktar	Shift+Ctrl+'	kys
+Dosya	Quick Export Selection PNG	Seçimi hızlı PNG dışa aktar	Alt+Shift+Ctrl+'	kys
+Dosya	Save for Web...	Web için kaydet	Alt+Shift+Ctrl+S	kys
+Dosya	Revert	Son kaydedilene dön	F12	kys
+Dosya	Close	Kapat	Ctrl+W	kys
+Dosya	Close All	Tümünü kapat	Alt+Ctrl+W	kys
+Dosya	Close Others	Diğerlerini kapat	Alt+Ctrl+P	kys
+Dosya	File Info...	Dosya bilgisi	Alt+Shift+Ctrl+I	kys
+Dosya	Print...	Yazdır	Ctrl+P	kys
+Dosya	Print One Copy	Tek kopya yazdır	Alt+Shift+Ctrl+P	kys
+Dosya	Browse in Bridge...	Bridge'de göz at	Alt+Ctrl+O / Shift+Ctrl+O	kys
+Dosya	Exit	Photoshop'tan çık	Ctrl+Q	kys
+Düzen	Undo	Geri al	Ctrl+Z	kys
+Düzen	Redo	Yinele	Shift+Ctrl+Z	kys
+Düzen	Toggle Last State	Son duruma geç / geri dön	Alt+Ctrl+Z	kys
+Düzen	Cut	Kes	Ctrl+X / F2	kys
+Düzen	Copy	Kopyala	Ctrl+C / F3	kys
+Düzen	Copy Merged	Birleşik kopyala (tüm görünür katmanlar)	Shift+Ctrl+C	kys
+Düzen	Paste	Yapıştır	Ctrl+V / F4	kys
+Düzen	Paste in Place	Yerinde yapıştır	Shift+Ctrl+V	kys
+Düzen	Paste Into	Seçimin içine yapıştır	Alt+Shift+Ctrl+V	kys
+Düzen	Fill...	Doldur	Shift+F5	kys
+Düzen	Fade...	Soldur (son efekti azalt)	Shift+Ctrl+F	kys
+Düzen	Free Transform	Serbest dönüştür (boyut, döndür)	Ctrl+T	kys
+Düzen	Again (repeat transform)	Dönüştürmeyi tekrarla	Shift+Ctrl+T	kys
+Düzen	Content-Aware Scale	İçeriğe duyarlı ölçekle	Alt+Shift+Ctrl+C	kys
+Düzen	Show Universal Search	Evrensel arama	Ctrl+F	kys
+Düzen	Keyboard Shortcuts...	Klavye kısayolları penceresi	Alt+Shift+Ctrl+K	kys
+Düzen	Menus...	Menüleri özelleştir	Alt+Shift+Ctrl+M	kys
+Düzen	Preferences: General...	Tercihler (genel)	Ctrl+K	kys
+Düzen	Color Settings...	Renk ayarları	Shift+Ctrl+K	kys
+Görüntü	Levels...	Düzeyler	Ctrl+L	kys
+Görüntü	Curves...	Eğriler	Ctrl+M	kys
+Görüntü	Color Balance...	Renk dengesi	Ctrl+B	kys
+Görüntü	Hue/Saturation...	Ton / doygunluk	Ctrl+U	kys
+Görüntü	Black & White...	Siyah beyaz	Alt+Shift+Ctrl+B	kys
+Görüntü	Invert	Renkleri ters çevir (negatif)	Ctrl+I	kys
+Görüntü	Desaturate	Rengi kaldır (gri ton)	Shift+Ctrl+U	kys
+Görüntü	Auto Tone	Otomatik ton	Shift+Ctrl+L	kys
+Görüntü	Auto Contrast	Otomatik kontrast	Alt+Shift+Ctrl+L	kys
+Görüntü	Auto Color	Otomatik renk	Shift+Ctrl+B	kys
+Görüntü	Image Size...	Görüntü boyutu	Alt+Ctrl+I	kys
+Görüntü	Canvas Size...	Tuval boyutu	Alt+Ctrl+C	kys
+Katmanlar	New Layer...	Yeni katman	Shift+Ctrl+N	kys
+Katmanlar	Layer Via Copy	Katmanı kopyala (çoğalt)	Ctrl+J	kys
+Katmanlar	Layer Via Cut	Kesip yeni katmana al	Shift+Ctrl+J	kys
+Katmanlar	Group Layers	Katmanları grupla	Ctrl+G	kys
+Katmanlar	Ungroup Layers	Grubu çöz	Shift+Ctrl+G	kys
+Katmanlar	Create Clipping Mask	Kırpma maskesi oluştur	Alt+Ctrl+G	kys
+Katmanlar	Merge Layers	Katmanları birleştir	Ctrl+E	kys
+Katmanlar	Merge Visible	Görünenleri birleştir	Shift+Ctrl+E	kys
+Katmanlar	Hide Layers	Katmanları gizle	Ctrl+,	kys
+Katmanlar	Lock Layers	Katmanları kilitle	Ctrl+/	kys
+Katmanlar	Select All Layers	Tüm katmanları seç	Alt+Ctrl+A	kys
+Katmanlar	Find Layers	Katman bul	Alt+Shift+Ctrl+F	kys
+Katmanlar	Bring to Front	En öne getir	Shift+Ctrl+]	kys
+Katmanlar	Bring Forward	Bir öne getir	Ctrl+]	kys
+Katmanlar	Send Backward	Bir arkaya gönder	Ctrl+[	kys
+Katmanlar	Send to Back	En arkaya gönder	Shift+Ctrl+[	kys
+Katmanlar	Layers panel	Katmanlar paneli	F7	kys
+Seçim	Select All	Tümünü seç	Ctrl+A	kys
+Seçim	Deselect	Seçimi kaldır	Ctrl+D	kys
+Seçim	Reselect	Yeniden seç	Shift+Ctrl+D	kys
+Seçim	Inverse	Seçimi ters çevir	Shift+Ctrl+I / Shift+F7	kys
+Seçim	Feather...	Kenar yumuşat (geçiş)	Shift+F6	kys
+Seçim	Refine Mask...	Maskeyi iyileştir	Alt+Ctrl+R	kys
+Filtre	Last Filter	Son filtreyi tekrarla	Alt+Ctrl+F	kys
+Filtre	Camera Raw Filter...	Camera Raw filtresi	Shift+Ctrl+A	kys
+Filtre	Liquify...	Sıvılaştır	Shift+Ctrl+X	kys
+Filtre	Lens Correction...	Lens düzeltme	Shift+Ctrl+R	kys
+Filtre	Wide Angle Correction	Geniş açı düzeltme	Alt+Shift+Ctrl+A	kys
+Filtre	Vanishing Point...	Kaybolma noktası	Alt+Ctrl+V	kys
+Filtre	Generative Workspace...	Üretken çalışma alanı	Alt+Shift+Ctrl+G	kys
+Filtre	Generative Upscale...	Üretken büyütme	Alt+Shift+Ctrl+U	kys
+Görünüm	Zoom In	Yakınlaştır	Ctrl++ / Ctrl+=	kys
+Görünüm	Zoom Out	Uzaklaştır	Ctrl+-	kys
+Görünüm	Fit on Screen	Ekrana sığdır	Ctrl+0	kys
+Görünüm	100%	Gerçek boyut (%100)	Ctrl+1 / Alt+Ctrl+0	kys
+Görünüm	Rulers	Cetveller	Ctrl+R	kys
+Görünüm	Guides	Kılavuzları göster / gizle	Ctrl+;	kys
+Görünüm	Lock Guides	Kılavuzları kilitle	Alt+Ctrl+;	kys
+Görünüm	Grid	Izgara	Ctrl+'	kys
+Görünüm	Snap	Yapış	Shift+Ctrl+;	kys
+Görünüm	Extras	Ekstraları göster / gizle	Ctrl+H	kys
+Görünüm	Target Path	Hedef yolu göster / gizle	Shift+Ctrl+H	kys
+Görünüm	Proof Colors	Prova renkleri	Ctrl+Y	kys
+Görünüm	Gamut Warning	Gamut uyarısı	Shift+Ctrl+Y	kys
+Pencere	Actions panel	Eylemler paneli	Alt+F9 / F9	kys
+Pencere	Info panel	Bilgi paneli	F8	kys
+Yardım	Photoshop Online Help	Photoshop yardımı	F1	kys

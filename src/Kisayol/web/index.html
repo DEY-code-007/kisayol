@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Kısayol</title>
+<style>
+/* Layout: one narrow column that lives beside the canvas: app switch, search, category strip, then keycap rows. */
+:root {
+  --bg: #14151a;
+  --panel: #1c1e25;
+  --line: #2a2d37;
+  --fg: #e9eaf0;
+  --dim: #8a8fa3;
+  --ps: #5aa9ff;
+  --ai: #ffa53d;
+  --acc: var(--ps);
+  --cap: #262933;
+  --cap-edge: #0d0e12;
+  --ui: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
+  color-scheme: dark;
+}
+body.ai { --acc: var(--ai); }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--fg); font: 14px/1.4 var(--ui); display: flex; flex-direction: column; overflow: hidden; user-select: none; }
+
+.top { padding: 12px 14px 10px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; background: var(--panel); }
+.row1 { display: flex; align-items: center; gap: 8px; }
+.seg { display: flex; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 3px; gap: 3px; flex: 1; }
+.seg button { flex: 1; font: 600 13px var(--ui); color: var(--dim); background: transparent; border: 0; border-radius: 6px; padding: 7px 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; }
+.seg button .sw { width: 9px; height: 9px; border-radius: 2px; }
+#t-ps .sw { background: var(--ps); } #t-ai .sw { background: var(--ai); }
+.seg button[aria-pressed="true"] { background: var(--cap); color: var(--fg); box-shadow: inset 0 -2px 0 var(--acc); }
+.icon { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--dim); cursor: pointer; display: grid; place-items: center; font-size: 15px; }
+.icon[aria-pressed="true"] { color: var(--acc); border-color: var(--acc); }
+.search { position: relative; }
+.search input { width: 100%; font: 15px var(--ui); color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px 10px 34px; outline: none; user-select: text; }
+.search input:focus { border-color: var(--acc); }
+.search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--dim); }
+.auto { font-size: 12px; color: var(--dim); display: flex; align-items: center; gap: 6px; min-height: 16px; }
+.auto i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
+.auto.on i { background: #3ddc84; box-shadow: 0 0 6px #3ddc84; }
+
+.cats { display: flex; gap: 6px; overflow-x: auto; padding: 10px 14px; border-bottom: 1px solid var(--line); scrollbar-width: none; flex-shrink: 0; }
+.cats::-webkit-scrollbar { display: none; }
+.cats button { font: 12px var(--ui); color: var(--dim); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; cursor: pointer; white-space: nowrap; }
+.cats button[aria-pressed="true"] { color: var(--bg); background: var(--acc); border-color: var(--acc); font-weight: 600; }
+
+.list { flex: 1; overflow-y: auto; padding: 4px 0 12px; }
+.list::-webkit-scrollbar { width: 8px; } .list::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+.group { font: 600 11px var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dim); padding: 14px 14px 6px; }
+.item { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 8px 14px; border-left: 2px solid transparent; }
+.item:hover { background: var(--panel); border-left-color: var(--acc); }
+.item .tr { font-weight: 600; }
+.item .en { grid-column: 1; font-size: 12px; color: var(--dim); }
+.keys { grid-row: 1 / span 2; grid-column: 2; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px; max-width: 190px; }
+kbd { font: 600 12px var(--mono); color: var(--fg); background: var(--cap); border: 1px solid var(--line); border-bottom: 3px solid var(--cap-edge); border-radius: 5px; padding: 2px 7px; min-width: 24px; text-align: center; }
+.plus { color: var(--dim); font-size: 11px; }
+.or { color: var(--dim); font-size: 11px; padding: 0 2px; }
+.txt { font-size: 12px; color: var(--fg); text-align: right; }
+mark { background: transparent; color: var(--acc); }
+.empty { color: var(--dim); text-align: center; padding: 40px 20px; }
+.foot { border-top: 1px solid var(--line); padding: 8px 14px; font-size: 12px; color: var(--dim); display: flex; justify-content: space-between; gap: 8px; background: var(--panel); }
+.foot kbd { font-size: 11px; padding: 1px 5px; }
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="row1">
+    <div class="seg" role="group" aria-label="Uygulama">
+      <button id="t-ps" data-app="ps" aria-pressed="true"><span class="sw"></span>Photoshop</button>
+      <button id="t-ai" data-app="ai" aria-pressed="false"><span class="sw"></span>Illustrator</button>
+    </div>
+    <button class="icon" id="pin" title="Hep üstte" aria-pressed="true">📌</button>
+  </div>
+  <div class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" placeholder="Ara: katman kopyala, kırp, Ctrl+J…" autocomplete="off" spellcheck="false">
+  </div>
+  <div class="auto" id="auto"><i></i><span>Otomatik: hangi programdaysan onun listesi açılır</span></div>
+</div>
+<div class="cats" id="cats"></div>
+<div class="list" id="list"></div>
+<div class="foot"><span>Aç / gizle: <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>K</kbd></span><span id="count"></span></div>
+
+<script src="data.js"></script>
+<script>
+const D = window.KISAYOL;
+let app = "ps", cat = "Tümü";
+const $ = s => document.querySelector(s);
+const norm = s => s.toLocaleLowerCase("tr").replace(/ı/g,"i").replace(/ğ/g,"g").replace(/ü/g,"u").replace(/ş/g,"s").replace(/ö/g,"o").replace(/ç/g,"c").replace(/\s*\+\s*/g,"+");
+const esc = s => s.replace(/[&<>]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;" }[c]));
+const send = o => { try { window.chrome.webview.postMessage(o); } catch (e) {} };
+
+function keyHtml(k) {
+  return k.split(" / ").map(alt => {
+    if (/[a-z]{3,}/.test(alt.replace(/Ctrl|Shift|Alt|Spacebar|Space|Arrow|keys|drag|hold|tool key/gi, "")))
+      return `<span class="txt">${esc(alt)}</span>`;
+    // split on + but keep a literal "+" key (Ctrl++)
+    const parts = []; let cur = "";
+    for (let i = 0; i < alt.length; i++) {
+      const ch = alt[i];
+      if (ch === "+" && cur !== "") { parts.push(cur); cur = ""; }
+      else cur += ch;
+    }
+    if (cur !== "") parts.push(cur);
+    return parts.map(p => `<kbd>${esc(p.trim())}</kbd>`).join('<span class="plus">+</span>');
+  }).join('<span class="or">ya da</span>');
+}
+
+function hl(text, terms) {
+  let h = esc(text);
+  if (!terms.length) return h;
+  const n = norm(text);
+  // highlight by index on normalized text (same length mapping for TR folding)
+  const marks = new Array(text.length).fill(false);
+  terms.forEach(t => { let i = n.indexOf(t); while (t && i >= 0) { for (let j = i; j < i + t.length; j++) marks[j] = true; i = n.indexOf(t, i + 1); } });
+  let out = "", open = false;
+  for (let i = 0; i < text.length; i++) {
+    if (marks[i] && !open) { out += "<mark>"; open = true; }
+    if (!marks[i] && open) { out += "</mark>"; open = false; }
+    out += esc(text[i]);
+  }
+  return out + (open ? "</mark>" : "");
+}
+
+function renderCats() {
+  const cats = ["Tümü", ...new Set(D[app].map(r => r.c))];
+  if (!cats.includes(cat)) cat = "Tümü";
+  $("#cats").innerHTML = cats.map(c => `<button data-c="${esc(c)}" aria-pressed="${c === cat}">${esc(c)}</button>`).join("");
+}
+
+function render() {
+  const q = norm($("#q").value.trim());
+  const terms = q.split(/\s+/).filter(Boolean);
+  let rows = D[app].filter(r => cat === "Tümü" || r.c === cat);
+  if (terms.length) rows = D[app].filter(r => { const h = norm(r.tr + " " + r.en + " " + r.k + " " + r.c); return terms.every(t => h.includes(t)); });
+  const list = $("#list");
+  if (!rows.length) { list.innerHTML = `<div class="empty">“${esc($("#q").value)}” için sonuç yok.<br>Başka bir kelime dene ya da İngilizce adını yaz.</div>`; $("#count").textContent = ""; return; }
+  let html = "", last = null;
+  rows.forEach(r => {
+    if (r.c !== last && (cat === "Tümü" || terms.length)) { html += `<div class="group">${esc(r.c)}</div>`; last = r.c; }
+    html += `<div class="item"><div class="tr">${hl(r.tr, terms)}</div><div class="keys">${keyHtml(r.k)}</div><div class="en">${hl(r.en, terms)}</div></div>`;
+  });
+  list.innerHTML = html;
+  list.scrollTop = 0;
+  $("#count").textContent = `${rows.length} kısayol`;
+}
+
+function setApp(a, fromAuto) {
+  app = a;
+  document.body.classList.toggle("ai", a === "ai");
+  document.querySelectorAll(".seg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.app === a)));
+  renderCats(); render();
+  if (fromAuto) { const el = $("#auto"); el.classList.add("on"); el.querySelector("span").textContent = (a === "ps" ? "Photoshop" : "Illustrator") + " açık, listesi gösteriliyor"; }
+}
+
+document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => setApp(b.dataset.app)));
+$("#cats").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; cat = b.dataset.c; $("#q").value = ""; renderCats(); render(); });
+$("#q").addEventListener("input", render);
+$("#q").addEventListener("keydown", e => { if (e.key === "Escape") { if ($("#q").value) { $("#q").value = ""; render(); } else send({ type: "hide" }); } });
+$("#pin").addEventListener("click", () => { const on = $("#pin").getAttribute("aria-pressed") !== "true"; $("#pin").setAttribute("aria-pressed", String(on)); send({ type: "topmost", value: on }); });
+
+try {
+  window.chrome.webview.addEventListener("message", e => {
+    const m = e.data;
+    if (m.type === "init") $("#pin").setAttribute("aria-pressed", String(!!m.topmost));
+    else if (m.type === "app") setApp(m.app, true);
+    else if (m.type === "focusSearch") { $("#q").focus(); $("#q").select(); }
+    else if (m.type === "hotkeyFailed") document.querySelector(".foot span").textContent = "Ctrl+Alt+K başka bir program tarafından kullanılıyor";
+  });
+} catch (e) {}
+
+setApp("ps");
+$("#q").focus();
+</script>
+</body>
+</html>
